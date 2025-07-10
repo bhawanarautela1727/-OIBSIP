@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+/* ✅ Calming Gradient */
+.hero-section {
+  background: linear-gradient(135deg, #c7d2fe, #e0e7ff); /* Soft blue/purple */
+  text-align: center;
+  padding: 70px 20px;
+  color: #1e3a8a;
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 20px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+.lang-btn {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: #1d4ed8;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #334155;
+}
+
+.cta-button {
+  display: inline-block;
+  margin: 20px 0 10px;
+  padding: 12px 30px;
+  background: #10b981;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #059669;
+}
+
+.guarantee {
+  font-size: 1rem;
+  color: #6b7280;
+  display: block;
+  margin-top: 8px;
+}
+
+/* ✅ Reduced Size */
+.hero-img {
+  max-width: 500px;
+  width: 80%;
+  margin-top: 40px;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  background: #f0f9ff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.feature.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature img {
+  max-width: 250px;
+  flex: 1;
+  max-width: 350px;
+  border-radius: 12px;
+}
+
+.feature div {
+  flex: 2;
+}
+
+.feature h3 {
+  font-size: 1.8rem;
+  color: #1e3a8a;
+}
+
+.feature p {
+  color: #334155;
+}
+
+.map-img {
+  width: 80px; /* You can increase to 100px if needed */
+  transition: transform 0.3s ease;
+}
+
+.map-img:hover {
+  transform: scale(1.1); /* Optional hover effect */
+}
+
+.green-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #22c55e;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 12px;
+  transition: background 0.3s;
+}
+
+.green-btn:hover {
+  background: #16a34a;
+}
+
+/* Advantages */
+.advantages {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background: #fefce8;
+  padding: 60px 20px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.advantage {
+  max-width: 240px;
+  margin: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.advantage img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.advantage h4 {
+  color: #7c3aed;
+}
+
+/* Map Section */
+.map-section {
+  text-align: center;
+  background: #fdf2f8;
+  padding: 60px 20px;
+}
+
+.map-section h3 {
+  font-size: 2rem;
+  color: #db2777;
+}
+
+/* ✅ Smaller World Map */
+.world-map {
+  max-width: 600px;
+  width: 90%;
+  margin: 30px 0;
+  border-radius: 12px;
+}
+
+.speed-img {
+  width: 80px; /* Increased from 60px */
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 1.2rem;
+  color: #1f2937;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.link {
+  display: block;
+  margin-top: 20px;
+  color: #10b981;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #f3f4f6;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .world-map {
+    max-width: 100%;
+  }
+
+  .feature img,
+  .speed-img,
+  footer img {
+    max-width: 90%;
+  }
+}
