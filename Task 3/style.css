@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.background {
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.converter-card {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  width: 420px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  color: #333;
+  text-align: center;
+}
+
+.converter-card h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.input-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.input-group input,
+.input-group select {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  background-color: #fff;
+}
+
+.result-group {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.result-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.result-display {
+  font-size: 1.8rem;
+  color: #007aff;
+  font-weight: bold;
+  background-color: #f0f9ff;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 2px dashed #007aff;
+}
+
+button {
+  padding: 0.8rem;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(to right, #007aff, #00c6ff);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #005fcc, #00a6e0);
+}
+
